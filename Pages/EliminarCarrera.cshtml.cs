@@ -19,7 +19,7 @@ namespace SistemaAcademico.Pages
                     oCarrera = carrera;
                     break;
                 }
-                    
+
             }
         }
 
