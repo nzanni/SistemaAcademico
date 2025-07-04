@@ -22,8 +22,6 @@ public static class ServicioCarrera
             return lista ?? new List<Carrera>();
 
         }
-        //public static void AgregarCarrera(Carrera nuevaCarrera)
-
 
     }
 }
