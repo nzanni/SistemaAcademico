@@ -1,20 +1,17 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using SistemaAcademico.Models;
+using SistemaAcademico.Servicios;
 
 namespace SistemaAcademico.Pages
 {
     public class IndexModel : PageModel
     {
-        private readonly ILogger<IndexModel> _logger;
-
-        public IndexModel(ILogger<IndexModel> logger)
-        {
-            _logger = logger;
-        }
+        public List<Carrera> Carrera { get; set; }
 
         public void OnGet()
         {
-
+            Carrera = ServicioCarrera.ObtenerCarreras();
         }
     }
 }
