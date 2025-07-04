@@ -2,15 +2,17 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using SistemaAcademico.Data;
 using SistemaAcademico.Models;
+using SistemaAcademico.Servicios;
 
 namespace SistemaAcademico.Pages
 {
-    public class TablaAlumnosModel : PageModel
+    public class TablaCarrerasModel : PageModel
     {
-        public List<Alumno> ListaMostrarAlumnos;
+        public List<Carrera> ListaMostrarCarrera;
         public void OnGet()
         {
-            ListaMostrarAlumnos = DatosCompartidos.ListAlumnos;
+            ListaMostrarCarrera = ServicioCarrera.ObtenerCarreras();
+        }
+
     }
-}
 }

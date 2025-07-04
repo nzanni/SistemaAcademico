@@ -4,6 +4,16 @@ using System.Text.Json;
 namespace SistemaAcademico.Servicios {
 public static class ServicioCarrera
 {
+        private static string ruta = "Data/carreras.json";
+
+        public static string LeerTextoDelArchivo()
+        {
+            if (File.Exists(ruta))
+            {
+                return File.ReadAllText(ruta);
+            }
+            return "[]";
+        }
         public static List<Carrera> ObtenerCarreras()
         { 
             string json = LeerTextoDelArchivo();
@@ -12,16 +22,8 @@ public static class ServicioCarrera
             return lista ?? new List<Carrera>();
 
         }
+        //public static void AgregarCarrera(Carrera nuevaCarrera)
 
-        private static string ruta = "Data/carreras.json";
 
-    public static string LeerTextoDelArchivo()
-    {
-        if (File.Exists(ruta))
-        {
-            return File.ReadAllText(ruta);
-        }
-        return "[]";
-    }
     }
 }

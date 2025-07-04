@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using SistemaAcademico.Data;
 using SistemaAcademico.Models;
 
-namespace SistemaAcademico.Pages
+namespace SistemaAcademico.Pages.Alumnos
 {
     public class CreateAlumnoModel : PageModel
     {
