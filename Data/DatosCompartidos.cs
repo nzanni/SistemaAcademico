@@ -1,5 +1,6 @@
 ﻿using SistemaAcademico.Models;
 
+
 namespace SistemaAcademico.Data
 {
     public static class DatosCompartidos
