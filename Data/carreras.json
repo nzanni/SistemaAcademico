@@ -1,0 +1,18 @@
+
+  [
+  {
+    "Id": 1,
+    "Nombre": "Ingeniería Informática",
+    "DuracionAnios": 5,
+    "TituloOtorgado": "Ingeniero en Informática",
+    "Modalidad": "Presencial"
+  },
+  {
+    "Id": 2,
+    "Nombre": "Administración de Empresas",
+    "DuracionAnios": 4,
+    "TituloOtorgado": "Licenciado en Administración",
+    "Modalidad": "Virtual"
+  }
+]
+
